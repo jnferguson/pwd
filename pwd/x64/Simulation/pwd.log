@@ -1,0 +1,118 @@
+﻿Build started 6/14/2017 10:44:18 PM.
+     1>Project "C:\Users\justin\Desktop\pwd\pwd\pwd.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Creating proxy/bridge routines
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\tlibc" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\stlport" /Zi /nologo /W3 /WX- /Od /D _WINDLL /Gm- /EHsc /MTd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Simulation\\" /Fd"x64\Simulation\vc140.pdb" /Gd /TP /errorReport:prompt challenge_reponse.cpp crc64.cpp pwd.cpp records.cpp record_cache.cpp util.cpp
+         challenge_reponse.cpp
+     1>challenge_reponse.cpp(143): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+     1>challenge_reponse.cpp(158): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+     1>challenge_reponse.cpp(568): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
+         crc64.cpp
+         pwd.cpp
+     1>c:\users\justin\desktop\pwd\pwd\records.hpp(26): warning C4200: nonstandard extension used: zero-sized array in struct/union
+         c:\users\justin\desktop\pwd\pwd\records.hpp(26): note: Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>c:\users\justin\desktop\pwd\pwd\records.hpp(204): warning C4244: 'argument': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+     1>c:\users\justin\desktop\pwd\pwd\records.hpp(275): warning C4244: 'argument': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+         records.cpp
+     1>c:\users\justin\desktop\pwd\pwd\records.hpp(26): warning C4200: nonstandard extension used: zero-sized array in struct/union
+         c:\users\justin\desktop\pwd\pwd\records.hpp(26): note: Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>c:\users\justin\desktop\pwd\pwd\records.hpp(204): warning C4244: 'argument': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+     1>c:\users\justin\desktop\pwd\pwd\records.hpp(275): warning C4244: 'argument': conversion from 'uint64_t' to 'uint32_t', possible loss of data
+         record_cache.cpp
+         util.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\tlibc" /I"C:\Program Files (x86)\Intel\IntelSGXSDK\include\stlport" /Zi /nologo /W3 /WX- /Od /D _WINDLL /Gm- /EHsc /MTd /GS /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Simulation\\" /Fd"x64\Simulation\vc140.pdb" /Gd /TC /errorReport:prompt pwd_t.c
+         pwd_t.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\justin\Desktop\pwd\x64\Simulation\pwd.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\Intel\IntelSGXSDK\bin\x64\Debug" sgx_trts_sim.lib sgx_tstdc.lib sgx_tservice_sim.lib sgx_tcrypto.lib /NODEFAULTLIB /MANIFEST:NO /Debug /PDB:"C:\Users\justin\Desktop\pwd\x64\Simulation\pwd.pdb" /TLBID:1 /NOENTRY /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\justin\Desktop\pwd\x64\Simulation\pwd.lib" /MACHINE:X64 /DLL x64\Simulation\challenge_reponse.obj
+         x64\Simulation\crc64.obj
+         x64\Simulation\pwd.obj
+         x64\Simulation\pwd_t.obj
+         x64\Simulation\records.obj
+         x64\Simulation\record_cache.obj
+         x64\Simulation\util.obj
+            Creating library C:\Users\justin\Desktop\pwd\x64\Simulation\pwd.lib and object C:\Users\justin\Desktop\pwd\x64\Simulation\pwd.exp
+     1>util.obj : error LNK2001: unresolved external symbol "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z)
+     1>pwd.obj : error LNK2001: unresolved external symbol "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z)
+     1>records.obj : error LNK2001: unresolved external symbol "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z)
+     1>util.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *)" (??3@YAXPEAX@Z)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *)" (??3@YAXPEAX@Z)
+     1>pwd.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *)" (??3@YAXPEAX@Z)
+     1>records.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *)" (??3@YAXPEAX@Z)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *)" (??3@YAXPEAX@Z)
+     1>util.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *,unsigned __int64)" (??3@YAXPEAX_K@Z)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *,unsigned __int64)" (??3@YAXPEAX_K@Z)
+     1>pwd.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *,unsigned __int64)" (??3@YAXPEAX_K@Z)
+     1>records.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *,unsigned __int64)" (??3@YAXPEAX_K@Z)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *,unsigned __int64)" (??3@YAXPEAX_K@Z)
+     1>util.obj : error LNK2001: unresolved external symbol "public: __cdecl std::exception::exception(char const * const &,int)" (??0exception@std@@QEAA@AEBQEBDH@Z)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "public: __cdecl std::exception::exception(char const * const &,int)" (??0exception@std@@QEAA@AEBQEBDH@Z)
+     1>pwd.obj : error LNK2001: unresolved external symbol "public: __cdecl std::exception::exception(char const * const &,int)" (??0exception@std@@QEAA@AEBQEBDH@Z)
+     1>records.obj : error LNK2001: unresolved external symbol "public: __cdecl std::exception::exception(char const * const &,int)" (??0exception@std@@QEAA@AEBQEBDH@Z)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "public: __cdecl std::exception::exception(char const * const &,int)" (??0exception@std@@QEAA@AEBQEBDH@Z)
+     1>util.obj : error LNK2001: unresolved external symbol "public: __cdecl std::exception::exception(class std::exception const &)" (??0exception@std@@QEAA@AEBV01@@Z)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "public: __cdecl std::exception::exception(class std::exception const &)" (??0exception@std@@QEAA@AEBV01@@Z)
+     1>pwd.obj : error LNK2001: unresolved external symbol "public: __cdecl std::exception::exception(class std::exception const &)" (??0exception@std@@QEAA@AEBV01@@Z)
+     1>records.obj : error LNK2001: unresolved external symbol "public: __cdecl std::exception::exception(class std::exception const &)" (??0exception@std@@QEAA@AEBV01@@Z)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "public: __cdecl std::exception::exception(class std::exception const &)" (??0exception@std@@QEAA@AEBV01@@Z)
+     1>util.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl std::exception::~exception(void)" (??1exception@std@@UEAA@XZ)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl std::exception::~exception(void)" (??1exception@std@@UEAA@XZ)
+     1>pwd.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl std::exception::~exception(void)" (??1exception@std@@UEAA@XZ)
+     1>records.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl std::exception::~exception(void)" (??1exception@std@@UEAA@XZ)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl std::exception::~exception(void)" (??1exception@std@@UEAA@XZ)
+     1>util.obj : error LNK2001: unresolved external symbol "public: virtual char const * __cdecl std::exception::what(void)const " (?what@exception@std@@UEBAPEBDXZ)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "public: virtual char const * __cdecl std::exception::what(void)const " (?what@exception@std@@UEBAPEBDXZ)
+     1>pwd.obj : error LNK2001: unresolved external symbol "public: virtual char const * __cdecl std::exception::what(void)const " (?what@exception@std@@UEBAPEBDXZ)
+     1>records.obj : error LNK2001: unresolved external symbol "public: virtual char const * __cdecl std::exception::what(void)const " (?what@exception@std@@UEBAPEBDXZ)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "public: virtual char const * __cdecl std::exception::what(void)const " (?what@exception@std@@UEBAPEBDXZ)
+     1>util.obj : error LNK2001: unresolved external symbol "public: __cdecl stlpmtx_std::__Named_exception::__Named_exception(class stlpmtx_std::basic_string<char,class stlpmtx_std::char_traits<char>,class stlpmtx_std::allocator<char> > const &)" (??0__Named_exception@stlpmtx_std@@QEAA@AEBV?$basic_string@DV?$char_traits@D@stlpmtx_std@@V?$allocator@D@2@@1@@Z)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "public: __cdecl stlpmtx_std::__Named_exception::__Named_exception(class stlpmtx_std::basic_string<char,class stlpmtx_std::char_traits<char>,class stlpmtx_std::allocator<char> > const &)" (??0__Named_exception@stlpmtx_std@@QEAA@AEBV?$basic_string@DV?$char_traits@D@stlpmtx_std@@V?$allocator@D@2@@1@@Z)
+     1>pwd.obj : error LNK2001: unresolved external symbol "public: __cdecl stlpmtx_std::__Named_exception::__Named_exception(class stlpmtx_std::basic_string<char,class stlpmtx_std::char_traits<char>,class stlpmtx_std::allocator<char> > const &)" (??0__Named_exception@stlpmtx_std@@QEAA@AEBV?$basic_string@DV?$char_traits@D@stlpmtx_std@@V?$allocator@D@2@@1@@Z)
+     1>records.obj : error LNK2001: unresolved external symbol "public: __cdecl stlpmtx_std::__Named_exception::__Named_exception(class stlpmtx_std::basic_string<char,class stlpmtx_std::char_traits<char>,class stlpmtx_std::allocator<char> > const &)" (??0__Named_exception@stlpmtx_std@@QEAA@AEBV?$basic_string@DV?$char_traits@D@stlpmtx_std@@V?$allocator@D@2@@1@@Z)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "public: __cdecl stlpmtx_std::__Named_exception::__Named_exception(class stlpmtx_std::basic_string<char,class stlpmtx_std::char_traits<char>,class stlpmtx_std::allocator<char> > const &)" (??0__Named_exception@stlpmtx_std@@QEAA@AEBV?$basic_string@DV?$char_traits@D@stlpmtx_std@@V?$allocator@D@2@@1@@Z)
+     1>util.obj : error LNK2001: unresolved external symbol "public: __cdecl stlpmtx_std::__Named_exception::__Named_exception(class stlpmtx_std::__Named_exception const &)" (??0__Named_exception@stlpmtx_std@@QEAA@AEBV01@@Z)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "public: __cdecl stlpmtx_std::__Named_exception::__Named_exception(class stlpmtx_std::__Named_exception const &)" (??0__Named_exception@stlpmtx_std@@QEAA@AEBV01@@Z)
+     1>pwd.obj : error LNK2001: unresolved external symbol "public: __cdecl stlpmtx_std::__Named_exception::__Named_exception(class stlpmtx_std::__Named_exception const &)" (??0__Named_exception@stlpmtx_std@@QEAA@AEBV01@@Z)
+     1>records.obj : error LNK2001: unresolved external symbol "public: __cdecl stlpmtx_std::__Named_exception::__Named_exception(class stlpmtx_std::__Named_exception const &)" (??0__Named_exception@stlpmtx_std@@QEAA@AEBV01@@Z)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "public: __cdecl stlpmtx_std::__Named_exception::__Named_exception(class stlpmtx_std::__Named_exception const &)" (??0__Named_exception@stlpmtx_std@@QEAA@AEBV01@@Z)
+     1>util.obj : error LNK2001: unresolved external symbol "public: virtual char const * __cdecl stlpmtx_std::__Named_exception::what(void)const " (?what@__Named_exception@stlpmtx_std@@UEBAPEBDXZ)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "public: virtual char const * __cdecl stlpmtx_std::__Named_exception::what(void)const " (?what@__Named_exception@stlpmtx_std@@UEBAPEBDXZ)
+     1>pwd.obj : error LNK2001: unresolved external symbol "public: virtual char const * __cdecl stlpmtx_std::__Named_exception::what(void)const " (?what@__Named_exception@stlpmtx_std@@UEBAPEBDXZ)
+     1>records.obj : error LNK2001: unresolved external symbol "public: virtual char const * __cdecl stlpmtx_std::__Named_exception::what(void)const " (?what@__Named_exception@stlpmtx_std@@UEBAPEBDXZ)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "public: virtual char const * __cdecl stlpmtx_std::__Named_exception::what(void)const " (?what@__Named_exception@stlpmtx_std@@UEBAPEBDXZ)
+     1>util.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl stlpmtx_std::__Named_exception::~__Named_exception(void)" (??1__Named_exception@stlpmtx_std@@UEAA@XZ)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl stlpmtx_std::__Named_exception::~__Named_exception(void)" (??1__Named_exception@stlpmtx_std@@UEAA@XZ)
+     1>pwd.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl stlpmtx_std::__Named_exception::~__Named_exception(void)" (??1__Named_exception@stlpmtx_std@@UEAA@XZ)
+     1>records.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl stlpmtx_std::__Named_exception::~__Named_exception(void)" (??1__Named_exception@stlpmtx_std@@UEAA@XZ)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl stlpmtx_std::__Named_exception::~__Named_exception(void)" (??1__Named_exception@stlpmtx_std@@UEAA@XZ)
+     1>util.obj : error LNK2001: unresolved external symbol _CxxThrowException
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol _CxxThrowException
+     1>pwd.obj : error LNK2001: unresolved external symbol _CxxThrowException
+     1>records.obj : error LNK2001: unresolved external symbol _CxxThrowException
+     1>record_cache.obj : error LNK2001: unresolved external symbol _CxxThrowException
+     1>util.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+     1>pwd.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+     1>records.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+     1>record_cache.obj : error LNK2001: unresolved external symbol __CxxFrameHandler3
+     1>util.obj : error LNK2001: unresolved external symbol __GSHandlerCheck_EH
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol __GSHandlerCheck_EH
+     1>pwd.obj : error LNK2001: unresolved external symbol __GSHandlerCheck_EH
+     1>records.obj : error LNK2001: unresolved external symbol __GSHandlerCheck_EH
+     1>record_cache.obj : error LNK2001: unresolved external symbol __GSHandlerCheck_EH
+     1>util.obj : error LNK2001: unresolved external symbol "const type_info::`vftable'" (??_7type_info@@6B@)
+     1>challenge_reponse.obj : error LNK2001: unresolved external symbol "const type_info::`vftable'" (??_7type_info@@6B@)
+     1>pwd.obj : error LNK2001: unresolved external symbol "const type_info::`vftable'" (??_7type_info@@6B@)
+     1>records.obj : error LNK2001: unresolved external symbol "const type_info::`vftable'" (??_7type_info@@6B@)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "const type_info::`vftable'" (??_7type_info@@6B@)
+     1>records.obj : error LNK2019: unresolved external symbol "public: __cdecl std::exception::exception(char const * const &)" (??0exception@std@@QEAA@AEBQEBD@Z) referenced in function "public: __cdecl std::bad_alloc::bad_alloc(char const *)" (??0bad_alloc@std@@QEAA@PEBD@Z)
+     1>record_cache.obj : error LNK2001: unresolved external symbol "public: __cdecl std::exception::exception(char const * const &)" (??0exception@std@@QEAA@AEBQEBD@Z)
+     1>C:\Users\justin\Desktop\pwd\x64\Simulation\pwd.dll : fatal error LNK1120: 16 unresolved externals
+     1>Done Building Project "C:\Users\justin\Desktop\pwd\pwd\pwd.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.54

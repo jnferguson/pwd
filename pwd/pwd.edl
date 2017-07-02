@@ -1,0 +1,26 @@
+enclave {
+
+    trusted {
+		public int initialize_enclave([in, size=sealed_length] void* sealed_data, uint32_t sealed_length);
+		public int destroy_enclave([out, size=sealed_length] void* sealed_data, uint32_t sealed_length, [out] uint32_t* out_length);
+		public int initialize_mmap([user_check] void* base, uint64_t length, uint32_t align, uint64_t seed);
+
+		public int add_user([in, string] const char* user, [in, string] const char* pwd);
+		public int update_user([in, string] const char* user, [in,string] const char* old_pwd, [in,string] const char* new_pwd);
+		public int check_password([in,string] const char* user, [in, string] const char* pwd);
+		public int find_user([in,string] const char* user, [out, size=pwd_len] char* pwd, uint64_t pwd_len);
+		public int encrypt_records(void);
+
+		public int get_public_key([out,size=key_len] void* key, uint64_t key_len);
+		public int is_public_key([user_check] void* key, uint64_t key_len, [out] char* match);
+		public int challenge_response([in,string] const char* user, [in,out,size=txn_len] /*charesp_transaction_t*/ void* txn, uint64_t txn_len);
+
+//		public int print_key(void);
+    };
+
+    untrusted {
+        void ocall_print([in, string]const char* str);
+		void log_msg(unsigned int priority, [in,string] const char* file, unsigned int line, [in, string] const char* msg);
+		// void insecure_log([...]) also create internal API that writes to file-system for secure log...
+    };
+};
