@@ -8,7 +8,7 @@ First people started in with distractions, then when that didn't work someone ca
 
 At which point, after years of this I arrived at my foaming, angry, barking state which induces the need to take sleeping pills, which as it turns out apparently aren't even sleeping pills because they keep me awake, cause this bizarre emotional state and keep me in a perpetual daze, but don't help me sleep. This made debugging implausible because I'd forget what line of assembly I had just read immediately after reading it.
 
-When I sorted that out and discerned I needed to wipe the computer for travel anyway, I discovered the thumb drive with the copy of the compiler I needed had been disappeared from my home. So when I went to go redownload it I found that its apparently entirely disappeared from the internet and VS2015 professional no longer seems to exist irrelevant of computer or network.
+When I sorted that out and discerned I needed to wipe the computer for travel anyway, I discovered the thumb drive with the copy of the compiler I needed had been disappeared from my home. So when I went to go redownload it I found that its apparently entirely disappeared from the internet.
 
 Further, when I attempt to work in manners that produce potentially useful products that I might be able to use to support myself, I am sabotaged. So I started doing bug bounties and turned in some shallow but legitimate bugs only to find they just didn't close bug reports and so I never got paid. In other instances, the payout was significantly lower than it should have been and they just declared they had paid me when they had not-- so I'm not allowed to work, I'm not allowed to be self-employed and I'm not allowed to free-agent with bounties.
 
